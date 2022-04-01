@@ -1,6 +1,6 @@
 {
   "name": "qwas",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "a useless cli script to print info about packages.json",
   "author": "Vincenzo Ciaccio <vincenzo.ciaccio@gmail.com>",
   "bin": "./src/index.js",
@@ -9,7 +9,10 @@
     "type": "git",
     "url": "https://github.com/vikkio88/qwas.git"
   },
-  "keywords": ["package.json", "scripts"],
+  "keywords": [
+    "package.json",
+    "scripts"
+  ],
   "license": "ISC",
   "dependencies": {
     "minisearch": "^4.0.3",
