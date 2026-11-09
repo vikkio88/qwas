@@ -1,21 +1,38 @@
 {
   "name": "qwas",
-  "version": "0.0.2",
-  "description": "a useless cli script to print info about packages.json",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "a cli command-note tool, save shell snippets with tags/description and find them fast",
+  "keywords": [
+    "cli",
+    "snippets",
+    "notes",
+    "command",
+    "cheatsheet"
+  ],
+  "scripts": {
+    "build": "bun run bun.build.ts",
+    "start": "bun index.ts",
+    "prepublishOnly": "bun run build",
+    "test": "bun test"
+  },
   "author": "Vincenzo Ciaccio <vincenzo.ciaccio@gmail.com>",
-  "bin": "./src/index.js",
-  "main": "./src/index.js",
+  "license": "ISC",
+  "main": "./dist/index.js",
+  "bin": {
+    "qwas": "dist/index.js"
+  },
   "repository": {
     "type": "git",
-    "url": "https://github.com/vikkio88/qwas.git"
+    "url": "git+https://github.com/vikkio88/qwas.git"
   },
-  "keywords": [
-    "package.json",
-    "scripts"
-  ],
-  "license": "ISC",
   "dependencies": {
-    "minisearch": "^4.0.3",
-    "yargs": "^17.4.0"
+    "clipboardy": "^5.0.0",
+    "picocolors": "^1.0.1"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/node": "^20.11.24",
+    "typescript": "^5.3.3"
   }
 }
