@@ -1,7 +1,7 @@
 {
   "name": "qwas",
   "type": "module",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "a cli command-note tool, save shell snippets with tags/description and find them fast",
   "keywords": [
     "cli",
